@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
-            $table->string('symbols');
+            $table->string('ticker');
             $table->decimal('open');
             $table->decimal('close')->nullable();
             $table->decimal('low')->nullable();
-            $table->decimal('volume')->nullable();
+            $table->doublec('volume')->nullable();
             $table->decimal('last')->nullable();
             $table->dateTime('date')->nullable();
             $table->timestamps();

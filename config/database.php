@@ -43,6 +43,12 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_URI', 'mongodb+srv://username:password@<atlas-cluster-uri>/stock?retryWrites=true&w=majority'),
+            'database' => 'stock',
+        ],
+
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
@@ -146,11 +152,7 @@ return [
             'database' => env('REDIS_CACHE_DB', '1'),
         ],
 
-        'mongodb' => [
-            'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb+srv://username:password@<atlas-cluster-uri>/stock?retryWrites=true&w=majority'),
-            'database' => 'stock',
-        ],
+
 
     ],
 

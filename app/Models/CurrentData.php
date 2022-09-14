@@ -6,5 +6,6 @@ use Jenssegers\Mongodb\Eloquent\Model;
 
 class CurrentData extends Model
 {
-    protected $connection = 'mongodb';
+   protected $connection = 'mongodb';
+   protected $guarded = [];
 }
