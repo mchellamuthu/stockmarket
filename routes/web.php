@@ -31,4 +31,5 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
+    Route::get('/history/{ticker}', [HomeController::class, 'history'])->name('history');
 });
