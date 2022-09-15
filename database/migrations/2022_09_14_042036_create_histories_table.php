@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal('open');
             $table->decimal('close')->nullable();
             $table->decimal('low')->nullable();
-            $table->doublec('volume')->nullable();
+            $table->double('volume')->nullable();
             $table->decimal('last')->nullable();
             $table->dateTime('date')->nullable();
             $table->timestamps();
